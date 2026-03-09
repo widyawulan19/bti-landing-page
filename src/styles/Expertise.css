@@ -159,6 +159,12 @@
     }
 }
 
+@media (max-width:480px) {
+    .expert-desc p {
+        width: 100%;
+    }
+}
+
 @keyframes fadeUpCard {
     from {
         opacity: 0;

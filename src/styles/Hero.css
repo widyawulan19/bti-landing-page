@@ -346,11 +346,15 @@ MEDIA QUERY
     }
 
     .left-desc h1 {
-        font-size: 24px;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
     }
 
     .left-desc p {
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 22px;
+        /* max-width: 320px; */
         text-align: center;
     }
 
@@ -382,13 +386,19 @@ MEDIA QUERY
         width: 60%;
     }
 
-    .action-btn .active,
+    .action-btn .active {
+        font-size: 14px;
+        padding: 12px 22px;
+        border-radius: 30px;
+    }
+
     .action-btn .normal {
-        padding: 10px;
+        font-size: 14px;
+        padding: 12px 22px;
     }
 
     .left-btn button {
-        padding: 6px 20px;
-        font-size: 10px;
+        font-size: 12px;
+        padding: 6px 14px;
     }
 }
