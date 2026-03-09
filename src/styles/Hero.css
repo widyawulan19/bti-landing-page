@@ -346,12 +346,28 @@ MEDIA QUERY
     }
 
     .left-desc h1 {
-        font-size: 34px;
+        font-size: 24px;
+    }
+
+    .left-desc p {
+        font-size: 12px;
+        text-align: center;
     }
 
     .hero-right {
         /* border: 1px solid red; */
+        margin-top: 40px;
     }
+
+    .overlay-card {
+        padding: 15px;
+    }
+
+    .overlay-card h2,
+    .overlay-card h3 {
+        font-size: 24px;
+    }
+
 
     .overlay-top {
         right: 0;
@@ -361,4 +377,18 @@ MEDIA QUERY
         left: 0;
     }
 
+
+    .action-btn {
+        width: 60%;
+    }
+
+    .action-btn .active,
+    .action-btn .normal {
+        padding: 10px;
+    }
+
+    .left-btn button {
+        padding: 6px 20px;
+        font-size: 10px;
+    }
 }
