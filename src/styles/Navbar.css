@@ -77,6 +77,22 @@ NAV LINKS
 }
 
 
+.nav-links button,
+.nav-btn button,
+.logo button {
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-links button:focus,
+.nav-links button:active,
+.nav-btn button:focus,
+.logo button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /* =======================
 NAV BTN
 ======================= */
