@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: var(--font-body);
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+}
+
+[id] {
+  scroll-margin-top: 120px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
+}
+
+
+:root {
+
+  /* ================= COLORS ================= */
+
+  --color-primary: #088ec3;
+  --color-primary-hover: #0679a8;
+  --color-primary-dark: #1E6BB6;
+  --color-primary-soft: #f0f8fb;
+
+  --color-white: #ffffff;
+
+  --color-dark: #1f2937;
+  --color-text: #4b5563;
+  --color-text-light: #9ca3af;
+
+  --color-border: #e5e7eb;
+  --color-bg-alt: #f9fafb;
+
+  /* ================= TYPOGRAPHY ================= */
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --h1-size: 48px;
+  --h2-size: 36px;
+  --h3-size: 28px;
+  --h4-size: 22px;
+
+  --text-lg: 18px;
+  --text-md: 16px;
+  --text-sm: 14px;
+
+  --line-tight: 1.2;
+  --line-normal: 1.6;
+
+  /* ================= SPACING (8px system) ================= */
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* ================= RADIUS ================= */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* ================= SHADOW ================= */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-large: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-primary: 0 6px 20px #1e6ab66a;
+  --shadow-large-primary: 0 10px 30px #1e6ab66a;
+
+  /* ================= TRANSITION ================= */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
 }

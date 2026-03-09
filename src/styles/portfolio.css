@@ -1,0 +1,148 @@
+.portfolio-wrapper.premium {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.portfolio-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.portfolio-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolio-card {
+    flex: 0 0 88%;
+    display: flex;
+    /* align-items: center; */
+    scroll-snap-align: center;
+    padding: 60px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+    color: white;
+    margin: 0 20px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+
+.portfolio-card.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.portfolio-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.portfolio-category {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-cta {
+    padding: 12px 28px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Chevron Glass Style */
+.chevron {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.chevron:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.chevron-left {
+    left: 40px;
+}
+
+.chevron-right {
+    right: 40px;
+}
+
+/* Edge Fade Effect */
+.fade-left,
+.fade-right {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
