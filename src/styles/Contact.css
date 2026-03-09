@@ -203,7 +203,7 @@
 }
 
 .row-cont select {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -368,8 +368,8 @@ FOOTER
 
     /* form  */
     .contact-form {
-        width: 80%;
-        padding: 40px;
+        width: 90%;
+        padding: 30px;
     }
 
     .form-header {
@@ -377,5 +377,14 @@ FOOTER
         padding-bottom: 10px;
         margin-bottom: 20px;
         border-bottom: 1px solid var(--color-border);
+    }
+
+    .contact-form select,
+    .contact-form textarea {
+        width: 95%;
+        padding: 12px;
+        border-radius: 8px;
+        /* border: 1px solid red; */
+        font-size: 12px;
     }
 }

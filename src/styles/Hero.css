@@ -1,15 +1,25 @@
 .hero-container {
     position: relative;
     width: 100%;
-    height: 100vh;
-    padding: 20px 0px;
+    min-height: 100vh;
+
+    padding: 120px 20px 60px;
+    /* TOP HARUS ADA */
     gap: 15px;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
+
     background-image: linear-gradient(to left bottom, #aacced, #b4d5ef, #c0def1, #cee6f3, #dceef6, #e5f1f9, #edf5fb, #f5f9fd, #f8fafe, #fbfcfe, #fdfdff, #ffffff);
     /* border: 1px solid violet; */
+    scroll-margin-top: 60px;
+}
+
+.hero-box {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
 }
 
@@ -18,7 +28,6 @@ HERO LEFT
 ======================= */
 
 .hero-left {
-    /* border: 1px solid blue; */
     width: 100%;
     height: 100%;
     padding-left: 20px;
@@ -72,8 +81,8 @@ HERO RIGHT
 ======================= */
 
 .hero-right {
-    /* border: 1px solid green; */
     width: 100%;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -291,42 +300,65 @@ ANIMATIONS
 MEDIA QUERY
 ======================= */
 @media(max-width:900px) {
+
+    .hero-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .hero-left {
-        /* border: 1px solid red; */
-        padding-left: 10px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .left-desc {
+        width: 100%;
+        text-align: center;
     }
 
     .left-desc h1 {
-        font-size: 50px;
-        font-weight: 800;
-        text-align: left;
-        margin: 0px;
+        font-size: 42px;
+        text-align: center;
     }
 
     .action-btn {
         width: 100%;
+        flex-direction: column;
     }
 
-    .action-btn .active,
-    .action-btn .normal {
-        padding: 15px !important;
+    .hero-right {
+        padding: 0;
+        margin-top: 20px;
     }
+
+    .right-box {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
+
     .hero-container {
-        gap: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding-top: 110px;
+        padding-bottom: 40px;
     }
 
-    .action-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
+    .left-desc h1 {
+        font-size: 34px;
     }
+
+    .hero-right {
+        /* border: 1px solid red; */
+    }
+
+    .overlay-top {
+        right: 0;
+    }
+
+    .overlay-bottom {
+        left: 0;
+    }
+
 }
