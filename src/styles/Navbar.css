@@ -235,12 +235,11 @@ MOBILE NAV
 
 @media(max-width:480px) {
     .navbar-container {
-        /* border: 1px solid red; */
         width: 100%;
     }
 
     .navbar-box {
-        /* width: 90%; */
+        width: 90%;
         padding: 5px 15px;
         border-radius: 30px;
         /* border: 1px solid blue; */
