@@ -95,7 +95,7 @@ function Expertise() {
             duration:1000,
             once:false
         })
-        AOS.refresh();
+        // AOS.refresh();
     },[])
 
     return (
