@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Scope.css'
 import { scopeList } from '../data/scope' 
-import { IoCheckmarkCircle } from "react-icons/io5";
 import { FaCheck } from 'react-icons/fa6';
 import AOS from 'aos';
 import { Link } from 'react-router-dom';

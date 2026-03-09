@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import '../styles/Contact.css'
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
-import { FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
 import AOS from 'aos'
 
 function ContactSection() {

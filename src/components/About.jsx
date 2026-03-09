@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect} from 'react'
 import '../styles/About.css'
 import img from '../assets/aboutfix.png'
 import AOS from 'aos';
