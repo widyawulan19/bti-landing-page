@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Navbar.css";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+import logo2 from '../assets/logoBTI2.png';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,16 +41,16 @@ function Navbar() {
         {/* LOGO */}
         <div className="logo">
           <button onClick={() => scrollToSection("home")}>
-            <img src={logo} alt="logo btn" />
+            <img src={logo2} alt="logo btn" />
           </button>
         </div>
 
         {/* MENU */}
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-          <button onClick={() => scrollToSection("home")}>
+          {/* <button onClick={() => scrollToSection("home")}>
             Home
-          </button>
+          </button> */}
 
           <button onClick={() => scrollToSection("services")}>
             Services

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { projectData } from "../data/projectData";
-// import "../styles/ProjectLists.css";
+import "../styles/Porto2.css";
 
 function ProjectList() {
   const [showAll, setShowAll] = useState(false);
