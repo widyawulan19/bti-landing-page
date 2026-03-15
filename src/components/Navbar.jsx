@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../styles/Navbar.css";
 // import logo from "../assets/logo.png";
 import logo2 from '../assets/logoBTI2.png';
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate()
+  const location = useLocation()
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,6 +37,12 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+    // pindah page
+  const goToPage = (path) => {
+    navigate(path);
+    setMenuOpen(false);
+  };
 
   return (
     <div className={`navbar-container ${scrolled ? "scrolled" : ""}`}>
@@ -74,6 +84,10 @@ function Navbar() {
 
           <button onClick={() => scrollToSection("contact")}>
             Contact
+          </button>
+
+          <button onClick={() => goToPage("/product")}>
+            Product
           </button>
 
         </div>

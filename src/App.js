@@ -9,6 +9,7 @@ function App() {
       <ScrollToHash />
       <LandingPage />
     </div>
+
   );
 }
 
