@@ -299,6 +299,24 @@ ANIMATIONS
 /* =======================
 MEDIA QUERY
 ======================= */
+@media(max-width:1400px) {
+    .hero-container {
+        /* border: 1px solid violet; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+    }
+
+    .hero-box {
+        width: 100%;
+
+        max-width: 1400px;
+        /* border: 1px solid red; */
+        margin-top: 30px;
+    }
+}
+
 @media(max-width:900px) {
 
     .hero-box {
