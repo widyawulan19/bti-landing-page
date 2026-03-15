@@ -150,7 +150,7 @@ HAMBURGER
 /* =======================
 MOBILE NAV
 ======================= */
-@media (max-width: 1400px) {
+@media (max-width: 2000px) {
     .navbar-container {
         width: 100%;
         /* border: 1px solid blue; */

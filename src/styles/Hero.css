@@ -299,7 +299,7 @@ ANIMATIONS
 /* =======================
 MEDIA QUERY
 ======================= */
-@media(max-width:1400px) {
+@media(max-width:2000px) {
     .hero-container {
         /* border: 1px solid violet; */
         display: flex;
