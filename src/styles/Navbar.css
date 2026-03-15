@@ -155,7 +155,7 @@ MOBILE NAV
     .navbar-container {
         width: 100%;
         /* border: 1px solid blue; */
-        margin-top: 15px;
+        /* margin-top: 15px; */
     }
 
     .navbar-box {
@@ -176,6 +176,7 @@ MOBILE NAV
     .navbar-box {
         width: 90%;
         padding: 5px 20px;
+        margin-top: 0px;
     }
 
 }
