@@ -43,8 +43,9 @@
 }
 
 .logo img {
-    width: 120px;
-    height: 40px;
+    width: 130px;
+    height: 30px;
+    /* border: 1px solid red; */
 }
 
 
