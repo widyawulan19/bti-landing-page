@@ -1,0 +1,236 @@
+/* CONTAINER */
+.catalog-container {
+    padding: 0px;
+    padding-bottom: 40px;
+    background: #f8f9fb;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* NAVBAR */
+.catalog-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px, 4px, 8px rgba(0, 0, 0, 0.05);
+}
+
+.catalog-navbar h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.catalog-navbar img {
+    width: 120px;
+    object-fit: contain;
+}
+
+/* TITLE */
+.catalog-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+/* SEARCH */
+.search-input {
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 12px 16px;
+    width: 350px;
+    max-width: 90%;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-input:focus {
+    border-color: #111827;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* FILTER BAR */
+.filter-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* DEFAULT (desktop tetap sama) */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+/* BUTTON */
+.filter-bar button {
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #e5e7eb;
+    color: #374151;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    /* 🔥 penting */
+}
+
+/* ACTIVE */
+.filter-bar button.active {
+    background: #111827;
+    color: white;
+}
+
+/* GRID */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0px 50px;
+}
+
+/* CARD */
+.catalog-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.catalog-card:hover {
+    transform: translateY(-5px);
+}
+
+.catalog-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY HOVER */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.catalog-card:hover .overlay {
+    opacity: 1;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.search-input {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 16px;
+    width: 320px;
+    max-width: 90%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #111827;
+}
+
+/* =======================
+MEDIA QUERY
+======================= */
+
+/* 🔥 MOBILE MODE */
+@media (max-width: 768px) {
+    .catalog-navbar {
+        padding: 0px 20px;
+    }
+
+    .filter-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filter-bar {
+        flex-wrap: nowrap;
+        /* ❗ jangan turun ke bawah */
+        overflow-x: auto;
+        /* ❗ bisa di scroll */
+        justify-content: flex-start;
+
+        width: 90%;
+        padding-bottom: 10px;
+
+        /* smooth scroll */
+        scroll-behavior: smooth;
+    }
+
+    /* hide scrollbar (optional biar clean) */
+    .filter-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-bar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* spacing kiri kanan */
+    .filter-bar {
+        padding-left: 10px;
+    }
+
+    .filter-bar button {
+        flex: 0 0 auto;
+        /* 🔥 biar gak stretch */
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+}

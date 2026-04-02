@@ -16,18 +16,36 @@ function Navbar() {
   };
 
   // ✅ smooth scroll function
+  // const scrollToSection = (id) => {
+  //   const el = document.getElementById(id);
+
+  //   if (el) {
+  //     el.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "start",
+  //     });
+  //   }
+
+  //   setMenuOpen(false);
+  // };
   const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-
-    if (el) {
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-
+  if (location.pathname !== "/") {
+    navigate(`/#${id}`);
     setMenuOpen(false);
-  };
+    return;
+  }
+
+  const el = document.getElementById(id);
+
+  if (el) {
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+
+  setMenuOpen(false);
+};
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +61,11 @@ function Navbar() {
     navigate(path);
     setMenuOpen(false);
   };
+
+  const goToProduct = () =>{
+    navigate("/product")
+    setMenuOpen(false)
+  }
 
   return (
     <div className={`navbar-container ${scrolled ? "scrolled" : ""}`}>
@@ -86,7 +109,7 @@ function Navbar() {
             Contact
           </button>
 
-          <button onClick={() => goToPage("/product")}>
+          <button onClick={goToProduct}>
             Product
           </button>
 

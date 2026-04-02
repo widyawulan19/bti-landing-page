@@ -1,22 +1,25 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css';
+import "aos/dist/aos.css"
 
-import Product from '../pages/Product'
-import LandingPage from '../pages/LandingPage'
-import ScrollToHash from '../utils/ScrollToHash'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import LandingPage from './pages/LandingPage';
+import Product from './pages/Product';
+import ScrollToHash from './utils/ScrollToHash';
 
 function AppRouter() {
   return (
-    <BrowserRouter>
-      <ScrollToHash />
+    <>
+
+      {/* <ScrollToHash /> */}
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/product" element={<Product />} />
       </Routes>
 
-    </BrowserRouter>
-  )
+    </>
+  );
 }
 
-export default AppRouter
+export default AppRouter;
