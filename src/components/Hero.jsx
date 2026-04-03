@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import '../styles/Hero.css'
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/herocomp.png';
 import {Link} from 'react-router-dom'
 import AOS from 'aos'
 
