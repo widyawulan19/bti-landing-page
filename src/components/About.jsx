@@ -1,9 +1,11 @@
-import React, { useEffect} from 'react'
+import React, { useEffect, useState} from 'react'
 import '../styles/About.css'
 import img from '../assets/aboutfix.png'
+import aboutImg from '../assets/about2.png'
 import AOS from 'aos';
 
 function About() {
+    const [play, setPlay] = useState(false);
 
     useEffect(()=>{
         AOS.init({
@@ -21,7 +23,27 @@ function About() {
         <div className="about-box">
             <div className="about-img" data-aos='fade-right'>
                 <div className="circle">
-                <img src={img} alt='about img' />
+                {/* <img src={img} alt='about img' /> */}
+                {!play ? (
+                    <div className="thumbnail" onClick={() => setPlay(true)}>
+                        <img src={aboutImg} alt="about img" />
+
+                        {/* PLAY ICON */}
+                        <div className="play-button">
+                            ▶
+                        </div>
+                    </div>
+                ):(
+                    <iframe
+                        width="100%"
+                        height="400"
+                        src="https://www.youtube.com/embed/McIj-g3H9UQ"
+                        title="Company Profile"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                    />
+                )}
                 </div>
             </div>
             <div className="about-desc" data-aos='fade-up' >
