@@ -77,6 +77,31 @@
     z-index: 0;
 }
 
+/* IFRAME */
+.circle iframe {
+    width: 100%;
+    /* height: 500px; */
+    aspect-ratio: 16 / 9;
+    /* 🔥 auto responsive */
+    height: auto;
+
+    border: none;
+    border-radius: 20px;
+
+    /* ✨ efek premium */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+    /* ✨ smooth */
+    transition: all 0.4s ease;
+    margin-right: 15px;
+}
+
+/* HOVER EFFECT */
+.circle iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
 /* WRAPPER */
 .thumbnail {
     position: relative;
@@ -88,6 +113,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 /* IMAGE */
 .thumbnail img {

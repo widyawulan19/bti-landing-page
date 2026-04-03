@@ -37,10 +37,10 @@ function About() {
                     <iframe
                         width="100%"
                         height="400"
-                        src="https://www.youtube.com/embed/McIj-g3H9UQ"
+                        src="https://www.youtube.com/embed/McIj-g3H9UQ?autoplay=1&mute=1"
                         title="Company Profile"
                         frameBorder="0"
-                        allow="autoplay; encrypted-media"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     />
                 )}
