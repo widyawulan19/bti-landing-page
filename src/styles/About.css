@@ -83,6 +83,10 @@
     cursor: pointer;
     overflow: hidden;
     border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* IMAGE */
@@ -266,6 +270,14 @@ MEDIA QUERY
 
     .about-box {
         flex-direction: column;
+    }
+
+
+
+    .thumbnail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
