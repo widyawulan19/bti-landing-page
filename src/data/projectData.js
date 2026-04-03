@@ -1,7 +1,7 @@
 import client1 from '../assets/project1.jpg'
 import client2 from '../assets/project2.png'
 import client3 from '../assets/project3.png'
-import client4 from '../assets/project4.png'
+// import client4 from '../assets/project4.png'
 import client5 from '../assets/project5.png'
 import client6 from '../assets/project6.png'
 import client7 from '../assets/project7.png'
@@ -32,12 +32,12 @@ export const projectData = [
         description: "Electrical & Electronic System 8th Floor",
         img: client3
     },
-    {
-        id: 4,
-        title: "PT. Insera Sena",
-        description: "Mechanical & Electrical System ASRS Phase 2",
-        img: client4
-    },
+    // {
+    //     id: 4,
+    //     title: "PT. Insera Sena",
+    //     description: "Mechanical & Electrical System ASRS Phase 2",
+    //     img: client4
+    // },
     {
         id: 5,
         title: "PT. Kawanishi Warehouse Indonesia",
